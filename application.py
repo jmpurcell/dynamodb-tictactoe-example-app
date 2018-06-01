@@ -17,7 +17,6 @@ from dynamodb.gameController        import GameController
 from models.game                    import Game
 from uuid                           import uuid4
 from flask                          import Flask, render_template, request, session, flash, redirect, jsonify, json
-from configparser                   import ConfigParser
 import os, time, sys, argparse
 
 application = Flask(__name__)
