@@ -73,7 +73,7 @@ if 'SERVER_PORT' in os.environ:
     serverPort = int(os.environ['SERVER_PORT'])
 
 if serverPort is None:
-    serverPort = 5000
+    serverPort = 80
 
 """
    Define the urls and actions the app responds to
