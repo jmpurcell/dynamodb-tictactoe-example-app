@@ -107,8 +107,8 @@ def index():
     games finished by the logged in user (if there is one).
     """
 
-   flash("yes in index!")
-   
+   flash("Table has not been created yet, please follow this link to create table.")
+
    if session == {} or session.get("username", None) == None:
         form = request.form
         if form:
