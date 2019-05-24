@@ -107,8 +107,7 @@ def index():
     games finished by the logged in user (if there is one).
     """
 
-   if inviteGames == inviteGames:
-        flash("yes in index!")
+   flash("yes in index!")
    
    if session == {} or session.get("username", None) == None:
         form = request.form
