@@ -107,8 +107,9 @@ def index():
     games finished by the logged in user (if there is one).
     """
 
-   return render_template("table.html", user="")
-
+   if inviteGames == inviteGames:
+        flash("yes in index!")
+   
    if session == {} or session.get("username", None) == None:
         form = request.form
         if form:
