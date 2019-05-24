@@ -107,8 +107,7 @@ def index():
     games finished by the logged in user (if there is one).
     """
    flash("Just in ....")
-   return render_template("table.html",
-                                user="")
+   return render_template("table.html", user="")
 
    if session == {} or session.get("username", None) == None:
         form = request.form
