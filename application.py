@@ -106,8 +106,11 @@ def index():
     the session to the person who logged in.  Also populates 3 tables for game invites, games in progress, and
     games finished by the logged in user (if there is one).
     """
+   flash("Just in ....")
+   return render_template("table.html",
+                                user="")
 
-    if session == {} or session.get("username", None) == None:
+   if session == {} or session.get("username", None) == None:
         form = request.form
         if form:
             formInput = form["username"]
